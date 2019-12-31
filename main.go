@@ -5,9 +5,12 @@ import (
 )
 
 func main() {
-	card := newCard()
-	
-	fmt.Println(card)
+	cards := []string{"Ace of Diamonds", newCard()} // This is a slice
+	cards = append(cards, "Six of Spades")          // Returns new slice
+
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
 }
 
 func newCard() string {
