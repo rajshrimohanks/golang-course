@@ -32,3 +32,7 @@ func (d deck) print() { // 'd' is the working variable for the receiver.
 func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
 }
+
+func toString() string {
+
+}
