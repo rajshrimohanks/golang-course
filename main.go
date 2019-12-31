@@ -1,16 +1,10 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
-	cards := []string{"Ace of Diamonds", newCard()} // This is a slice
+	cards := deck{"Ace of Diamonds", newCard()} // This is a slice
 	cards = append(cards, "Six of Spades")          // Returns new slice
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 }
 
 func newCard() string {
