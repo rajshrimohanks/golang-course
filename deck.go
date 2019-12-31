@@ -8,8 +8,8 @@ import (
 // which is a slice of strings
 type deck []string
 
-func (cards deck) print() {			// 'd' is the working variable for the receiver.
-	for i, card := range cards {
+func (d deck) print() {			// 'd' is the working variable for the receiver.
+	for i, card := range d {
 		fmt.Println(i, card)
 	}
 }
