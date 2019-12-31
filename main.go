@@ -1,8 +1,7 @@
 package main
 
 func main() {
-	cards := deck{"Ace of Diamonds", newCard()} // This is a slice
-	cards = append(cards, "Six of Spades")          // Returns new slice
+	cards := newDeck()
 
 	cards.print()
 }
