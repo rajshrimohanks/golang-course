@@ -3,11 +3,7 @@ package main
 func main() {
 	cards := newDeck()
 
-	cards.saveToFile("my_cards")
+	cards.shuffle()
 
-	anotherCards := newDeckFromFile("my_cards")
-	anotherCards.print()
-
-	yetAnotherCards := newDeckFromFile("my_cards1")
-	yetAnotherCards.print()
+	cards.print()
 }
